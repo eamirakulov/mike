@@ -45,6 +45,9 @@ main {
 
 #scotch-panel {
   background: #000000; }
+  @media (min-width: 768px) {
+    #scotch-panel {
+      display: none; } }
   #scotch-panel .inner {
     padding: 40px 0 0 0; }
   #scotch-panel ul {
