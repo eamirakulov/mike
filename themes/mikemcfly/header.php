@@ -25,6 +25,7 @@
 
 	<script type="text/javascript">
 		$(document).on('ready', function(){
+			cookiesPolicyBar();
 			var easyPanel = $('#scotch-panel').scotchPanel({
 	            containerSelector: 'body',
 	            direction: 'right',
@@ -55,8 +56,6 @@
 	        $('.mobile-menu').click(function() {
 	        	easyPanel.close();
 	        });
-
-			cookiesPolicyBar();
 		});
 
 		function cookiesPolicyBar(){
