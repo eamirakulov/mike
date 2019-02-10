@@ -27,6 +27,7 @@
 		$(document).on('ready', function(){
 			cookiesPolicyBar();
 			var easyPanel = $('#scotch-panel').scotchPanel({
+				useCSS: false,
 	            containerSelector: 'body',
 	            direction: 'right',
 	            duration: 300,
