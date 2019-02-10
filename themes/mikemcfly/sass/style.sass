@@ -1,0 +1,716 @@
+/* Theme name: Mike McFly
+/* Version: 1.0
+/* Author: Emil Amirakulov */
+
+@font-face
+	font-family: 'proxima_nova_ltsemibold'
+	src: url('fonts/proxima_nova_semibold.eot')
+	src: url('fonts/proxima_nova_semibold.eot?#iefix') format("embedded-opentype"), url('fonts/proxima_nova_semibold.woff2') format("woff2"), url('fonts/proxima_nova_semibold.woff') format("woff"), url('fonts/proxima_nova_semibold.ttf') format("truetype"), url('fonts/proxima_nova_semibold.svg#fonts/proxima_nova_ltsemibold') format("svg")
+	font-weight: normal
+	font-style: normal
+
+body
+	margin: 0
+	font-size: 16px
+	color: #000
+	font-family: 'Playfair Display', serif
+
+.scotch-panel-wrapper
+	position: relative
+	overflow: hidden
+	width: 100%
+
+.scotch-panel-canvas
+	position: relative
+	height: 100%
+	width: 100%
+
+.toggle-panel
+	position: absolute
+	top: 20px
+	right: 15px
+	z-index: 999
+
+	span
+		font-size: 38px
+		line-height: 38px
+		font-family: proxima_nova_ltsemibold
+		color: #fff
+		display: none
+
+	&:focus
+		text-decoration: none
+
+	@media (min-width: 768px)
+		display: none
+
+#scotch-panel
+	background: #000000
+
+	.inner
+		padding: 40px 0 0 0
+
+	ul
+		margin: 30px 0 0 0
+		padding: 0
+		li
+			border-bottom: 4px solid #303030
+			text-align: center
+
+			a
+				color: #fff
+				font-family: proxima_nova_ltsemibold
+				font-size: 24px
+				padding: 15px 0
+				display: block
+
+				span
+					display: inline-block
+					vertical-align: middle
+
+				&:hover,
+				&:focus
+					text-decoration: none
+
+			&.inst
+				a
+					&:before
+						content: " "
+						display: inline-block
+						vertical-align: middle
+						width: 20px
+						height: 20px
+						background: url(img/inst.svg) no-repeat center
+						background-size: 100%
+						margin-right: 10px
+
+			&.spotify
+				a
+					&:before
+						content: " "
+						display: inline-block
+						vertical-align: middle
+						width: 20px
+						height: 20px
+						background: url(img/spotify.svg) no-repeat center
+						background-size: 100%
+						margin-right: 10px
+
+			&.soundcloud
+				a
+					&:before
+						content: " "
+						display: inline-block
+						vertical-align: middle
+						width: 20px
+						height: 20px
+						background: url(img/soundcloud.svg) no-repeat center
+						background-size: 100%
+						margin-right: 10px
+
+			&.fb
+				a
+					&:before
+						content: " "
+						display: inline-block
+						vertical-align: middle
+						width: 20px
+						height: 20px
+						background: url(img/fb.svg) no-repeat center
+						background-size: 100%
+						margin-right: 10px
+.logo
+	text-align: center
+	img
+		max-width: 145px
+.main-menu
+	position: absolute
+	top: 48px
+	left: 0
+	right: 0
+	margin: 0 auto
+	background: rgba(0, 0, 0, 0.33)
+	border-radius: 5px
+	padding: 15px 20px
+	max-width: 934px
+	z-index: 10
+
+	@media (max-width: 767px)
+		display: none
+
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		display: flex
+		justify-content: space-between
+
+		li
+			a
+				font-family: proxima_nova_ltsemibold
+				color: #fff
+				font-size: 16px
+				line-height: 0px
+
+				span
+					display: inline-block
+					vertical-align: middle
+
+			&.inst
+				a
+					&:before
+						content: " "
+						display: inline-block
+						vertical-align: middle
+						width: 20px
+						height: 20px
+						background: url(img/inst.svg) no-repeat center
+						background-size: 100%
+						margin-right: 10px
+
+			&.spotify
+				a
+					&:before
+						content: " "
+						display: inline-block
+						vertical-align: middle
+						width: 20px
+						height: 20px
+						background: url(img/spotify.svg) no-repeat center
+						background-size: 100%
+						margin-right: 10px
+
+			&.soundcloud
+				a
+					&:before
+						content: " "
+						display: inline-block
+						vertical-align: middle
+						width: 20px
+						height: 20px
+						background: url(img/soundcloud.svg) no-repeat center
+						background-size: 100%
+						margin-right: 10px
+
+			&.fb
+				a
+					&:before
+						content: " "
+						display: inline-block
+						vertical-align: middle
+						width: 20px
+						height: 20px
+						background: url(img/fb.svg) no-repeat center
+						background-size: 100%
+						margin-right: 10px
+
+.notification
+	background: #080800
+	color: #fff
+	font-family: 'PT Sans', sans-serif
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	text-align: center
+	z-index: 9999
+	padding: 14.5px 0
+	display: none
+
+	span
+		font-size: 14px
+		margin-right: 17px
+
+	a
+		font-size: 13px
+		color: #fff
+		padding: 7px 13px
+		margin: 0 5px
+		display: inline-block
+		vertical-align: middle
+		border: 1px solid #fff
+		border-radius: 5px
+
+		&:hover
+			text-decoration: none
+			background: #fff
+			color: #000
+#intro
+	position: relative
+	z-index: 9
+
+	h1
+		position: absolute
+		bottom: 260px
+		left: 0
+		right: 0
+		max-width: 800px
+		text-align: center
+		font-size: 76px
+		font-weight: 900
+		color: #fff
+		margin: 0 auto
+
+		&:before
+			content: " "
+			width: 100%
+			background: #FAED25
+			height: 34px
+			position: absolute
+			left: 0
+			top: 50%
+			z-index: -1
+
+		@media (max-width: 767px)
+			top: 50%
+			transform: translateY(-50%)
+			bottom: initial
+			padding: 0 30px
+
+			&:before
+				content: none
+
+			span
+				display: inline-block
+				position: relative
+				padding: 0 30px
+
+				&:before
+					content: " "
+					width: 100%
+					background: #FAED25
+					height: 34px
+					position: absolute
+					left: 0
+					top: 50%
+					z-index: -1
+
+section
+	h2.section-title
+		margin: 0 0 70px 0
+		color: #000
+		font-size: 76px
+		font-style: italic
+		font-weight: 900
+		text-align: center
+
+		@media (max-width: 767px)
+			font-size: 39px
+
+		&:after
+			content: " "
+			display: block
+			height: 11px
+			width: 124px
+			background: #FAED25
+			margin: 37px auto 0 auto
+			border-radius: 5px
+			@media (max-width: 767px)
+				margin: 20px auto 0 auto
+				height: 5px
+
+#events
+	padding: 68px 0
+
+	.item
+		margin-bottom: 65px
+		@media (max-width: 767px)
+			margin-bottom: 30px
+
+		&:nth-child(4n)
+			clear: left
+
+		.top
+			padding-bottom: 15px
+			overflow: hidden
+
+			.ev-title
+				float: left
+				width: 70%
+				padding-right: 10px
+				@media (max-width: 767px)
+					float: none
+					width: 100%
+
+			.date
+				float: right
+				width: 30%
+				text-align: right
+				@media (max-width: 767px)
+					float: none
+					width: 100%
+
+		h3
+			font-weight: 900
+			margin: 0
+			font-size: 16px
+			color: #000
+
+		.event-content
+			border-top: 10px solid #FAED25
+			padding: 15px 0
+			font-size: 14px
+			font-family: 'PT Sans', sans-serif
+
+		.links
+			@media (max-width: 767px)
+				display: flex
+				justify-content: space-between
+
+#about
+	padding: 150px 0
+	background: #F5F5F5
+	@media (max-width: 767px)
+		padding: 60px 0
+	h2.headline
+		font-size: 56px
+		font-weight: 900
+		font-style: italic
+		margin: 0 0 40px 0
+		line-height: 75px
+		text-align: center
+		@media (max-width: 767px)
+			font-size: 26px
+			text-align: left
+			line-height: 35px
+
+	.copy
+		font-size: 27px
+		font-style: italic
+		font-weight: 400
+		line-height: 36px
+		text-align: center
+		@media (max-width: 767px)
+			text-align: left
+
+		p
+			margin: 0 0 30px 0
+
+			img
+				margin-top: 10px
+				@media (max-width: 767px)
+					margin: 50px auto
+					display: block
+
+	.excerpt
+		font-size: 27px
+		font-style: italic
+		font-weight: 900
+		text-align: center
+		@media (max-width: 767px)
+			text-align: left
+
+		a
+			color: #000
+			text-decoration: underline
+
+		&:before
+			content: " "
+			display: block
+			height: 11px
+			width: 124px
+			background: #FAED25
+			margin: 0 auto 22px auto
+			border-radius: 5px
+			@media (max-width: 767px)
+				content: none
+
+
+		.author
+			font-size: 16px
+			font-style: normal
+
+#mentor
+	padding: 120px 0
+	@media (max-width: 767px)
+		padding: 75px 0
+
+	.section-title
+		margin: 0 0 45px 0
+
+	.intro
+		font-family: 'PT Sans', sans-serif
+		font-size: 14px
+		max-width: 800px
+		margin: 0 auto
+		text-align: center
+
+	.question
+		margin-top: 44px
+		font-weight: 900
+		text-align: center
+
+		&:after
+			content: " "
+			display: block
+			height: 11px
+			width: 124px
+			background: #FAED25
+			margin: 12px auto 0 auto
+			border-radius: 5px
+
+
+	.ans
+		font-family: 'PT Sans', sans-serif
+		font-size: 14px
+		text-align: center
+		margin: 12px 0 0 0
+		@media (max-width: 767px)
+			text-align: left
+
+	.yellow-part
+		font-size: 22px
+		font-weight: 900
+		text-align: center
+		background: #FAED25
+		padding: 74px 0
+		margin: 54px 0 10px 0
+		@media (max-width: 767px)
+			br
+				display: none
+
+#testimonials
+	background: #F5F5F5
+	padding: 68px 0 110px 0
+
+	h2
+		@media (max-width: 767px)
+			margin: 0 0 50px 0
+
+	h3
+		font-size: 16px
+		margin: 0 0 18px 0
+		font-weight: 900
+		text-align: center
+
+	.thumb
+		img
+			max-width: 100%
+			display: block
+			border-radius: 25px
+			@media (max-width: 767px) and (orientation: landscape)
+				margin: 0 auto
+
+	.quote
+		font-size: 22px
+		font-weight: 900
+		margin: 18px 0
+
+	.copy
+		font-family: 'PT Sans', sans-serif
+		font-size: 14px
+		margin: 0 0 40px 0
+
+	.item
+		@media (max-width: 767px)
+			margin-bottom: 65px
+	.links
+		@media (max-width: 767px)
+			display: flex
+			justify-content: space-between
+
+#production-services
+	padding: 80px 0
+
+	h2
+		@media (max-width: 767px)
+			margin: 0 0 45px 0
+
+	.container
+		max-width: 960px
+
+	.copy
+		.intro
+			text-align: center
+			font-family: 'PT Sans', sans-serif
+			font-size: 14px
+
+		.service-title
+			margin: 40px 0 0 0
+			font-size: 20px
+			font-weight: 700
+			text-align: center
+
+			&:after
+				content: " "
+				display: block
+				height: 13px
+				max-width: 360px
+				background: #FAED25
+				margin: -13px auto 0 auto
+				border-radius: 5px
+
+		.service-copy
+			text-align: center
+			font-family: 'PT Sans', sans-serif
+			font-size: 14px
+			margin: 25px 0 0 0
+			@media (max-width: 767px)
+				text-align: left
+
+		.price
+			text-align: center
+			font-family: 'PT Sans', sans-serif
+			font-size: 14px
+			font-weight: 700
+			@media (max-width: 767px)
+				text-align: left
+
+#faq
+	padding: 16px 0 70px 0
+	background: #FAED25
+
+	.container
+		max-width: 960px
+
+	.item
+		padding: 50px 0 0 0
+
+		.que
+			font-size: 22px
+			font-weight: 900
+
+		.ans
+			font-family: 'PT Sans', sans-serif
+			font-size: 14px
+
+#contact
+	padding: 90px 0 76px 0
+	h2
+		@media (max-width: 767px)
+			margin-bottom: 45px
+
+	.copy
+		max-width: 706px
+		margin: 0 auto
+		font-family: 'PT Sans', sans-serif
+		font-size: 14px
+
+		form
+			font-family: 'PT Sans', sans-serif
+			@media (max-width: 767px)
+				margin-top: 70px
+
+				.radiolbl
+					margin-right: 20px
+
+				.wpcf7-list-item
+					margin: 0 1em 24px 0
+
+			.subj
+				overflow: hidden
+				padding: 25px 0 0 0
+
+			.radio-681
+				float: right
+				@media (max-width: 767px)
+					float: none
+				input
+					margin-right: 5px
+
+				label
+					font-weight: 400 !important
+
+			input[type="text"],
+			input[type="email"]
+				font-size: 14px
+				width: 100%
+				height: 43px
+				border: 1px solid rgba(112, 112, 112, 0.7)
+				border-radius: 5px
+				padding: 15px 18px
+				margin-top: 20px
+
+				&::placeholder
+					font-size: 14px
+					color: #000000
+					opacity: 0.5
+
+			textarea
+				margin-top: 20px
+				font-size: 14px
+				width: 100%
+				height: 377px
+				resize: none
+				border: 1px solid rgba(112, 112, 112, 0.7)
+				border-radius: 5px
+				padding: 15px 18px
+
+				&::placeholder
+					font-family: 'PT Sans', sans-serif
+					font-size: 14px
+					color: #000000
+					opacity: 0.5
+
+			input[type="submit"]
+				background: #DFDFDF
+				border-radius: 5px
+				border: none
+				color: #000
+				font-size: 13px
+				padding: 10px 15px
+				margin: 35px auto 0 auto
+				display: block
+
+footer
+	background: #000000
+	font-size: 18px
+	padding: 24px 0
+	text-align: center
+
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+
+		li
+			display: inline-block
+			@media (max-width: 767px)
+				width: 100%
+				padding-left: 80px
+				text-align: left
+
+			&:before
+				content: " "
+				display: inline-block
+				vertical-align: middle
+				width: 5px
+				height: 5px
+				background: #FAED25
+				margin: 0 10px
+				border-radius: 5px
+				@media (max-width: 767px)
+					content: none
+
+			&:first-child
+				&:before
+					content: none
+
+			a
+				color: #fff
+
+				&:hover
+					text-decoration: none
+					color: #fff
+.c-btn
+	padding: 8px 30px 9px 30px
+	font-size: 13px
+	font-family: 'PT Sans', sans-serif
+	border-radius: 5px
+
+	@media (max-width: 1024px) and (min-width: 768px) and (orientation: portrait)
+		padding: 8px 10px 9px 10px
+
+	&.yellow
+		background: #FAED25
+		color: #000
+		margin-right: 15px
+
+	&.black
+		background: #000
+		color: #fff
+
+	&:hover
+		text-decoration: none
+		opacity: 0.8
+
