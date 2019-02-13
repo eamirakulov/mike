@@ -11,7 +11,7 @@
 
 html
 	scroll-behavior: smooth
-	
+
 body
 	margin: 0
 	font-size: 16px
@@ -266,7 +266,7 @@ main
 			height: 34px
 			position: absolute
 			left: 0
-			top: 50%
+			top: 42%
 			z-index: -1
 
 		@media (max-width: 767px)
@@ -290,7 +290,7 @@ main
 					height: 34px
 					position: absolute
 					left: 0
-					top: 50%
+					top: 42%
 					z-index: -1
 
 section
@@ -442,6 +442,8 @@ section
 		max-width: 800px
 		margin: 0 auto
 		text-align: center
+		@media (max-width: 767px)
+			text-align: left
 
 	.question
 		margin-top: 44px
@@ -472,8 +474,9 @@ section
 		text-align: center
 		background: #FAED25
 		padding: 74px 0
-		margin: 54px 0 10px 0
+		margin: 70px 0 28px 0
 		@media (max-width: 767px)
+			text-align: left
 			br
 				display: none
 
@@ -532,12 +535,16 @@ section
 			text-align: center
 			font-family: 'PT Sans', sans-serif
 			font-size: 14px
+			@media (max-width: 767px)
+				text-align: left
 
 		.service-title
 			margin: 40px 0 0 0
 			font-size: 20px
 			font-weight: 700
 			text-align: center
+			@media (max-width: 767px)
+				margin: 40px 0 25px 0
 
 			&:after
 				content: " "
@@ -555,6 +562,7 @@ section
 			margin: 25px 0 0 0
 			@media (max-width: 767px)
 				text-align: left
+				display: inline
 
 		.price
 			text-align: center
@@ -563,6 +571,7 @@ section
 			font-weight: 700
 			@media (max-width: 767px)
 				text-align: left
+				display: inline
 
 #faq
 	padding: 16px 0 70px 0
@@ -577,6 +586,8 @@ section
 		.que
 			font-size: 22px
 			font-weight: 900
+			@media (max-width: 767px)
+				margin-bottom: 30px
 
 		.ans
 			font-family: 'PT Sans', sans-serif

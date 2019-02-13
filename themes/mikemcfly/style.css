@@ -227,7 +227,7 @@ main {
       height: 34px;
       position: absolute;
       left: 0;
-      top: 50%;
+      top: 42%;
       z-index: -1; }
     @media (max-width: 767px) {
       #intro h1 {
@@ -248,7 +248,7 @@ main {
             height: 34px;
             position: absolute;
             left: 0;
-            top: 50%;
+            top: 42%;
             z-index: -1; } }
 
 section h2.section-title {
@@ -391,6 +391,9 @@ section h2.section-title {
     max-width: 800px;
     margin: 0 auto;
     text-align: center; }
+    @media (max-width: 767px) {
+      #mentor .intro {
+        text-align: left; } }
   #mentor .question {
     margin-top: 44px;
     font-weight: 900;
@@ -417,10 +420,12 @@ section h2.section-title {
     text-align: center;
     background: #FAED25;
     padding: 74px 0;
-    margin: 54px 0 10px 0; }
+    margin: 70px 0 28px 0; }
     @media (max-width: 767px) {
-      #mentor .yellow-part br {
-        display: none; } }
+      #mentor .yellow-part {
+        text-align: left; }
+        #mentor .yellow-part br {
+          display: none; } }
 
 #testimonials {
   background: #F5F5F5;
@@ -467,11 +472,17 @@ section h2.section-title {
     text-align: center;
     font-family: "PT Sans", sans-serif;
     font-size: 14px; }
+    @media (max-width: 767px) {
+      #production-services .copy .intro {
+        text-align: left; } }
   #production-services .copy .service-title {
     margin: 40px 0 0 0;
     font-size: 20px;
     font-weight: 700;
     text-align: center; }
+    @media (max-width: 767px) {
+      #production-services .copy .service-title {
+        margin: 40px 0 25px 0; } }
     #production-services .copy .service-title:after {
       content: " ";
       display: block;
@@ -487,7 +498,8 @@ section h2.section-title {
     margin: 25px 0 0 0; }
     @media (max-width: 767px) {
       #production-services .copy .service-copy {
-        text-align: left; } }
+        text-align: left;
+        display: inline; } }
   #production-services .copy .price {
     text-align: center;
     font-family: "PT Sans", sans-serif;
@@ -495,7 +507,8 @@ section h2.section-title {
     font-weight: 700; }
     @media (max-width: 767px) {
       #production-services .copy .price {
-        text-align: left; } }
+        text-align: left;
+        display: inline; } }
 
 #faq {
   padding: 16px 0 70px 0;
@@ -507,6 +520,9 @@ section h2.section-title {
     #faq .item .que {
       font-size: 22px;
       font-weight: 900; }
+      @media (max-width: 767px) {
+        #faq .item .que {
+          margin-bottom: 30px; } }
     #faq .item .ans {
       font-family: "PT Sans", sans-serif;
       font-size: 14px; }
