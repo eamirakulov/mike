@@ -220,15 +220,6 @@ main {
     font-weight: 900;
     color: #fff;
     margin: 0 auto; }
-    #intro h1:before {
-      content: " ";
-      width: 100%;
-      background: #FAED25;
-      height: 34px;
-      position: absolute;
-      left: 0;
-      top: 42%;
-      z-index: -1; }
     @media (max-width: 767px) {
       #intro h1 {
         top: 50%;
@@ -240,16 +231,7 @@ main {
         #intro h1 span {
           display: inline-block;
           position: relative;
-          padding: 0 30px; }
-          #intro h1 span:before {
-            content: " ";
-            width: 100%;
-            background: #FAED25;
-            height: 34px;
-            position: absolute;
-            left: 0;
-            top: 42%;
-            z-index: -1; } }
+          padding: 0 30px; } }
 
 section h2.section-title {
   margin: 0 0 70px 0;
