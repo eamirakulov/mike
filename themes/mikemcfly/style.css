@@ -97,15 +97,25 @@ main {
         background: url(img/soundcloud.svg) no-repeat center;
         background-size: 100%;
         margin-right: 10px; }
-      #scotch-panel ul li.fb a:before {
-        content: " ";
+      #scotch-panel ul li.fb {
+        margin-left: 60px !important; }
+        #scotch-panel ul li.fb a:before {
+          content: " ";
+          display: inline-block;
+          vertical-align: middle;
+          width: 20px;
+          height: 20px;
+          background: url(img/fb.svg) no-repeat center;
+          background-size: 100%;
+          margin-right: 10px; }
+      #scotch-panel ul li.inst, #scotch-panel ul li.spotify, #scotch-panel ul li.soundcloud, #scotch-panel ul li.fb {
+        margin: 23px 10px 0 10px;
         display: inline-block;
-        vertical-align: middle;
-        width: 20px;
-        height: 20px;
-        background: url(img/fb.svg) no-repeat center;
-        background-size: 100%;
-        margin-right: 10px; }
+        border: none; }
+        #scotch-panel ul li.inst span, #scotch-panel ul li.spotify span, #scotch-panel ul li.soundcloud span, #scotch-panel ul li.fb span {
+          display: none; }
+        #scotch-panel ul li.inst a, #scotch-panel ul li.spotify a, #scotch-panel ul li.soundcloud a, #scotch-panel ul li.fb a {
+          display: inline; }
 
 .logo {
   text-align: center; }
@@ -132,50 +142,53 @@ main {
     padding: 0;
     display: flex;
     justify-content: space-between; }
-    .main-menu ul li a {
-      font-family: proxima_nova_ltsemibold;
-      color: #fff;
-      font-size: 16px;
-      line-height: 0px; }
-      .main-menu ul li a span {
+    .main-menu ul li {
+      padding: 0 15px; }
+      .main-menu ul li a {
+        font-family: proxima_nova_ltsemibold;
+        color: #fff;
+        font-size: 16px;
+        line-height: 0px; }
+      .main-menu ul li.inst a:before {
+        content: " ";
         display: inline-block;
-        vertical-align: middle; }
-    .main-menu ul li.inst a:before {
-      content: " ";
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      background: url(img/inst.svg) no-repeat center;
-      background-size: 100%;
-      margin-right: 10px; }
-    .main-menu ul li.spotify a:before {
-      content: " ";
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      background: url(img/spotify.svg) no-repeat center;
-      background-size: 100%;
-      margin-right: 10px; }
-    .main-menu ul li.soundcloud a:before {
-      content: " ";
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      background: url(img/soundcloud.svg) no-repeat center;
-      background-size: 100%;
-      margin-right: 10px; }
-    .main-menu ul li.fb a:before {
-      content: " ";
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      background: url(img/fb.svg) no-repeat center;
-      background-size: 100%;
-      margin-right: 10px; }
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        background: url(img/inst.svg) no-repeat center;
+        background-size: 100%;
+        margin-right: 10px; }
+      .main-menu ul li.spotify a:before {
+        content: " ";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        background: url(img/spotify.svg) no-repeat center;
+        background-size: 100%;
+        margin-right: 10px; }
+      .main-menu ul li.soundcloud a:before {
+        content: " ";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        background: url(img/soundcloud.svg) no-repeat center;
+        background-size: 100%;
+        margin-right: 10px; }
+      .main-menu ul li.fb a:before {
+        content: " ";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        background: url(img/fb.svg) no-repeat center;
+        background-size: 100%;
+        margin-right: 10px; }
+      .main-menu ul li.inst, .main-menu ul li.spotify, .main-menu ul li.soundcloud, .main-menu ul li.fb {
+        padding: 0; }
+        .main-menu ul li.inst span, .main-menu ul li.spotify span, .main-menu ul li.soundcloud span, .main-menu ul li.fb span {
+          display: none; }
 
 .notification {
   background: #080800;
@@ -209,6 +222,18 @@ main {
 #intro {
   position: relative;
   z-index: 9; }
+  #intro:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.72); }
+    @media (max-width: 767px) {
+      #intro:before {
+        display: none; } }
   #intro h1 {
     position: absolute;
     bottom: 260px;
@@ -422,8 +447,7 @@ section h2.section-title {
     text-align: center; }
   #testimonials .thumb img {
     max-width: 100%;
-    display: block;
-    border-radius: 25px; }
+    display: block; }
     @media (max-width: 767px) and (orientation: landscape) {
       #testimonials .thumb img {
         margin: 0 auto; } }
@@ -435,9 +459,13 @@ section h2.section-title {
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     margin: 0 0 40px 0; }
-  @media (max-width: 767px) {
-    #testimonials .item {
-      margin-bottom: 65px; } }
+  #testimonials .item {
+    margin-bottom: 60px; }
+    #testimonials .item:nth-child(4n) {
+      clear: left; }
+    @media (max-width: 767px) {
+      #testimonials .item {
+        margin-bottom: 65px; } }
   @media (max-width: 767px) {
     #testimonials .links {
       display: flex;
@@ -522,12 +550,10 @@ section h2.section-title {
     #contact .copy form {
       font-family: "PT Sans", sans-serif; }
       @media (max-width: 767px) {
-        #contact .copy form {
-          margin-top: 70px; }
-          #contact .copy form .radiolbl {
-            margin-right: 20px; }
-          #contact .copy form .wpcf7-list-item {
-            margin: 0 1em 24px 0; } }
+        #contact .copy form .radiolbl {
+          margin-right: 20px; }
+        #contact .copy form .wpcf7-list-item {
+          margin: 0 1em 24px 0; } }
       #contact .copy form .subj {
         overflow: hidden;
         padding: 25px 0 0 0; }

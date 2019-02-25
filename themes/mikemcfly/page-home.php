@@ -32,7 +32,7 @@
 					<?php 
 						$args = array(
 							'post_type' => 'events',
-							'posts_per_page' => 6
+							'posts_per_page' => 12
 						);
 
 						$the_query = new WP_Query( $args ); ?>
@@ -58,6 +58,9 @@
 										<?php endif; ?>
 										<?php if(!empty(get_field('read_here'))): ?>
 											<a target="_blank" href="<?php echo get_field('read_here'); ?>" class="c-btn yellow">Read Here</a>
+										<?php endif; ?>
+										<?php if(!empty(get_field('listen_here'))): ?>
+											<a target="_blank" href="<?php echo get_field('listen_here'); ?>" class="c-btn black">Listen Here</a>
 										<?php endif; ?>
 									</div>
 								</div>
@@ -101,7 +104,7 @@
 					<?php 
 						$args = array(
 							'post_type' => 'testimonials',
-							'posts_per_page' => 3
+							'posts_per_page' => -1
 						);
 
 						$the_query = new WP_Query( $args ); ?>
