@@ -186,16 +186,16 @@ main {
         background-size: 100%;
         margin-right: 10px; }
       .main-menu ul li.inst, .main-menu ul li.spotify, .main-menu ul li.soundcloud, .main-menu ul li.fb {
-        padding: 0; }
+        padding: 0;
+        line-height: 0; }
         .main-menu ul li.inst span, .main-menu ul li.spotify span, .main-menu ul li.soundcloud span, .main-menu ul li.fb span {
           display: none; }
 
 .notification {
-  background: #080800;
   color: #fff;
   font-family: "PT Sans", sans-serif;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: 15px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -231,9 +231,6 @@ main {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.72); }
-    @media (max-width: 767px) {
-      #intro:before {
-        display: none; } }
   #intro h1 {
     position: absolute;
     bottom: 260px;
@@ -288,7 +285,7 @@ section h2.section-title {
     @media (max-width: 767px) {
       #events .item {
         margin-bottom: 30px; } }
-    #events .item:nth-child(4n) {
+    #events .item:nth-child(3n+1) {
       clear: left; }
     #events .item .top {
       padding-bottom: 15px;
@@ -461,7 +458,7 @@ section h2.section-title {
     margin: 0 0 40px 0; }
   #testimonials .item {
     margin-bottom: 60px; }
-    #testimonials .item:nth-child(4n) {
+    #testimonials .item:nth-child(3n+1) {
       clear: left; }
     @media (max-width: 767px) {
       #testimonials .item {

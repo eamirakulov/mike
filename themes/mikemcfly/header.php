@@ -99,8 +99,3 @@
 		</header>
 
 		<main>
-			<div class="notification">
-				<span>This website uses cookies.</span>
-				<a href="#" id="close">Accept</a>
-				<a href="<?php bloginfo('url'); ?>/privacy-policy">See Policy</a>
-			</div>

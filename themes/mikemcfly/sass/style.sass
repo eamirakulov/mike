@@ -229,15 +229,15 @@ main
 			&.soundcloud,
 			&.fb
 				padding: 0
+				line-height: 0
 				span
 					display: none
 
 .notification
-	background: #080800
 	color: #fff
 	font-family: 'PT Sans', sans-serif
-	position: fixed
-	bottom: 0
+	position: absolute
+	bottom: 15px
 	left: 0
 	width: 100%
 	text-align: center
@@ -275,9 +275,6 @@ main
 		top: 0
 		left: 0
 		background: rgba(0, 0, 0, 0.72)
-
-		@media (max-width: 767px)
-			display: none
 
 	h1
 		position: absolute
@@ -337,7 +334,7 @@ section
 		@media (max-width: 767px)
 			margin-bottom: 30px
 
-		&:nth-child(4n)
+		&:nth-child(3n+1)
 			clear: left
 
 		.top
@@ -526,7 +523,7 @@ section
 	.item
 		margin-bottom: 60px
 
-		&:nth-child(4n)
+		&:nth-child(3n+1)
 			clear: left
 
 		@media (max-width: 767px)
